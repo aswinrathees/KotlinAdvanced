@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinAdvanced">
         <activity
+            android:name=".samples.FlowWithViewModelActivity"
+            android:exported="false" />
+        <activity
             android:name=".samples.FlowActivity"
             android:exported="false" />
         <activity

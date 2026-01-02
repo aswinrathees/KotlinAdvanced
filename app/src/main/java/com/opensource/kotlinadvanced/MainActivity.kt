@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.opensource.kotlinadvanced.samples.FlowActivity
+import com.opensource.kotlinadvanced.samples.FlowWithViewModelActivity
 import com.opensource.kotlinadvanced.ui.theme.KotlinAdvancedTheme
 
 class MainActivity : ComponentActivity() {
@@ -38,6 +39,14 @@ class MainActivity : ComponentActivity() {
                         Button(onClick = { launchActivity(FlowActivity::class.java) }) {
                             Text(
                                 text = "Flow",
+                                modifier = Modifier.fillMaxWidth(),
+                                textAlign = TextAlign.Center
+                            )
+                        }
+
+                        Button(onClick = { launchActivity(FlowWithViewModelActivity::class.java) }) {
+                            Text(
+                                text = "Flow With ViewModel",
                                 modifier = Modifier.fillMaxWidth(),
                                 textAlign = TextAlign.Center
                             )
